@@ -1,0 +1,108 @@
+:root{
+    --main-color:#344e41;
+    --secondry-color:#588157;
+    --text-color:#dad7cd;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin: 100px auto;
+}
+.add label{
+    font-size: 20px;
+    font-weight: 900;
+}
+.add .input {
+    display: flex;
+    gap: 20px;
+}
+.add input,
+.tasks input{
+    padding: 6px 20px;
+    border-radius: 14px;
+    background: var(--main-color);
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+.add button{
+    padding: 6px 20px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    font-weight: 700;
+}
+.display{
+    background: var(--main-color);
+    padding: 20px 10px;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.display .tasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    background-color: var(--secondry-color);
+    padding: 11px;
+    border-radius: 12px;
+    text-align: left;
+    position: relative;
+}
+.display .tasks::before{
+    content: '';
+    width: 20px;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+}
+.tasks.red::before { background-color: red; }
+.tasks.blue::before { background-color: blue; }
+.tasks.green::before { background-color: green; }
+.tasks.purple::before { background-color: rebeccapurple; }
+
+
+.btn{
+    padding: 2px 20px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    color: white
+}
+.del{
+    background-color: rgb(223, 16, 16);
+}
+.edit{
+    background-color: navy;
+}
+.ok{
+    background-color: lawngreen;
+}
+
+select{
+    padding: 0px 12px;
+    border-radius: 12px;
+    background: #555;
+    color: white;
+    text-align: center;
+}
+select option:nth-child(2){
+    background: red;
+}
+select option:nth-child(3){
+    background: blue;
+}
+select option:nth-child(4){
+    background: green;
+}
+select option:nth-child(5){
+    background: rebeccapurple;
+}
